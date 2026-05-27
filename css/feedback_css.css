@@ -1,0 +1,116 @@
+.feedback-section {
+  padding: 80px 20px;
+  background: #f5f7f6;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-container {
+  max-width: 650px;
+  width: 100%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.feedback-container h2 {
+  color: #2fbf71;
+  margin-bottom: 6px;
+}
+
+.feedback-container p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Animal image options */
+.experience-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.experience-images label {
+  text-align: center;
+  cursor: pointer;
+}
+
+.experience-images input {
+  display: none;
+}
+
+.experience-images img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.experience-images span {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+/* Selected image */
+.experience-images input:checked + img {
+  border-color: #2fbf71;
+  transform: scale(1.1);
+}
+
+/* Star Rating */
+.rating-title {
+  font-weight: 600;
+}
+
+.rating-box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 15px 0 25px;
+}
+
+.rating-box input {
+  display: none;
+}
+
+.rating-box label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.rating-box label:hover,
+.rating-box label:hover ~ label,
+.rating-box input:checked ~ label {
+  color: #f4c430;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #2fbf71;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #28a963;
+}

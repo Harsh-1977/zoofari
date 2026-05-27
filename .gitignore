@@ -1,0 +1,48 @@
+# Compiled Java class files
+*.class
+
+# Log files
+*.log
+
+# Package Files (Build Artifacts)
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven or Gradle build directories
+target/
+build/
+out/
+.gradle/
+
+# JSP specific exclusions (e.g., compiled JSP servlets)
+# These are often generated in a 'work' or 'temp' directory by the server
+work/
+temp/
+jsp_servlet/
+
+# IDE Specific Files
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.settings/
+.project
+.classpath
+.factorypath
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Operating System Files
+.DS_Store
+Thumbs.db

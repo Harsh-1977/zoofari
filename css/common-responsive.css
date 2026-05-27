@@ -1,0 +1,208 @@
+/* =====================================
+   GLOBAL RESET & BASE RESPONSIVE
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =====================================
+   GLOBAL CONTAINER
+===================================== */
+
+.container,
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* =====================================
+   FLEX & GRID HELPERS
+===================================== */
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col-2 {
+    flex: 1 1 50%;
+}
+
+.flex-col-3 {
+    flex: 1 1 33.33%;
+}
+
+.flex-col-4 {
+    flex: 1 1 25%;
+}
+
+/* =====================================
+   UNIVERSAL FORM RESPONSIVE
+===================================== */
+
+form {
+    width: 100%;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+}
+
+/* =====================================
+   BUTTON RESPONSIVE
+===================================== */
+
+button,
+.btn {
+    white-space: nowrap;
+}
+
+/* =====================================
+   COMMON CARD / BOX LAYOUT
+===================================== */
+
+.card,
+.login-wrapper,
+.form-card,
+.booking-card {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* =====================================
+   SECTION SPACING
+===================================== */
+
+section {
+    padding: 70px 0;
+}
+
+/* =====================================
+   SPLIT LAYOUT (Image + Form etc.)
+===================================== */
+
+.split-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.split-layout .left,
+.split-layout .right {
+    flex: 1 1 50%;
+}
+
+/* =====================================
+   NAVBAR MOBILE FIX
+===================================== */
+
+@media (max-width: 992px) {
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 992px) {
+
+    section {
+        padding: 50px 0;
+    }
+
+    .flex-col-2,
+    .flex-col-3,
+    .flex-col-4 {
+        flex: 1 1 50%;
+    }
+
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 40px 0;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .flex-col-2,
+    .flex-col-3,
+    .flex-col-4 {
+        flex: 1 1 100%;
+    }
+
+    /* Split Layout Stack */
+    .split-layout {
+        flex-direction: column;
+    }
+
+    .split-layout .left,
+    .split-layout .right {
+        width: 100%;
+    }
+
+    /* Footer Fix */
+    footer .row {
+        text-align: center;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 25px;
+    }
+
+}
+
+/* =====================================
+   SMALL MOBILE FIX
+===================================== */
+
+@media (max-width: 480px) {
+
+    button,
+    .btn {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+}
